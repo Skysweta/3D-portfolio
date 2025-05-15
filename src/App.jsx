@@ -1,5 +1,6 @@
 
 import NavBar from './components/NavBar.jsx'
+import Contact from './sections/Contact.jsx'
 import Experience from './sections/Experience.jsx'
 
 import FeatureCards from './sections/FeatureCards.jsx'
@@ -16,6 +17,7 @@ const App = () => {
      ></FeatureCards>
     <Experience></Experience>
     <TechStack></TechStack>
+    <Contact></Contact>
     </>
     
   )

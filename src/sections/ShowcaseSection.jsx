@@ -47,18 +47,17 @@ const AppShowcase = () => {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
-            <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+          <div ref={rydeRef} className="first-project-wrapper"> 
+            <div className="w-full h-80  flex items-center justify-center overflow-hidden px-4 bg-[#FFEFDB] rounded-lg ">
+              <img src="/images/ss.png" alt="Wanderlust" />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                 Wanderlust
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+               A platform that seamlessly integrates functionality for users to list, 
+                 edit, and review accommodations, complete with secure login capabilities
               </p>
             </div>
           </div>
@@ -69,16 +68,17 @@ const AppShowcase = () => {
                 <img
                   src="/images/project2.png"
                   alt="Library Management Platform"
+                  
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Real-time location tracker</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/bakery.png" alt="Bakery"  rounded	/>
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>A beautiful and well structured bakery shop site</h2>
             </div>
           </div>
         </div>

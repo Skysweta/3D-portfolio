@@ -4,7 +4,8 @@ import gsap from "gsap";
 import TitleHeader from "../components/TitleHeader";
 import TechIcon from "../components/Models/TechLogos/Techicon";
 import { techStackIcons } from "../constants";
-// import { techStackImgs } from "../constants";
+
+ import { techStackImgs } from "../constants";
 
 const TechStack = () => {
   // Animate the tech cards in the skills section
@@ -61,6 +62,7 @@ const TechStack = () => {
                 <div className="tech-icon-wrapper">
                   <TechIcon model={techStackIcon} />
                 </div>
+                
                 {/* The padding-x and w-full classes are used to add horizontal padding to the 
                     text and make it take up the full width of the component. */}
                 <div className="padding-x w-full">
@@ -72,22 +74,22 @@ const TechStack = () => {
           ))}
 
           {/* This is for the img part */}
-          {/* {techStackImgs.map((techStackIcon, index) => (
+          {techStackImgs.map((techStackIcon, index) => (
             <div
               key={index}
               className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
             >
               <div className="tech-card-animated-bg" />
               <div className="tech-card-content">
-                <div className="tech-icon-wrapper">
-                  <img src={techStackIcon.imgPath} alt="" />
+                <div className="w-40 h-55transform-gpu hover:rotate-3 hover:scale-110 transition-all duration-300 ">
+                  <img src={techStackIcon.imgPath} alt="img"  />
                 </div>
                 <div className="padding-x w-full">
                   <p>{techStackIcon.name}</p>
                 </div>
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
       </div>
     </div>
